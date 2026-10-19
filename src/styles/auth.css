@@ -1,0 +1,234 @@
+/* =========================
+   AUTH STYLES (inicio-sesion.css & registro.css)
+========================= */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #8b0000, #e50914, #b20710);
+  color: #151923;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.auth-card.register-card {
+  max-width: 660px;
+}
+
+.auth-logo {
+  text-align: center;
+  color: #e50914;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.auth-logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.auth-card h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.auth-subtitulo {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIOS */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.auth-campo {
+  margin-bottom: 20px;
+}
+
+.auth-campo label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.auth-campo input,
+.auth-campo select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+  background: white;
+}
+
+.auth-campo input:focus,
+.auth-campo select:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.12);
+}
+
+/* CERTIFICADO BOX (registro.css) */
+.auth-certificado-box {
+  background: #fff5f5;
+  border: 2px dashed #e50914;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.auth-certificado-texto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.auth-icono-certificado {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e50914;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.auth-certificado-texto h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.auth-certificado-texto h3 span {
+  color: #e50914;
+}
+
+.auth-certificado-texto p {
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.auth-btn-subir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: white;
+  border: 1.5px solid #e50914;
+  border-radius: 8px;
+  color: #e50914;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  gap: 8px;
+}
+
+.auth-btn-subir:hover {
+  background: #e50914;
+  color: white;
+}
+
+.auth-file-selected {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #155724;
+  background: #d4edda;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BOTÓN DE ACCIÓN */
+.auth-btn-submit {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background: #e50914;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+.auth-btn-submit:hover {
+  background: #c70812;
+  transform: translateY(-2px);
+}
+
+.auth-footer-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.auth-footer-link a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.auth-footer-link a:hover {
+  text-decoration: underline;
+}
+
+.auth-error-banner {
+  background: #ffebe8;
+  color: #c70812;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 18px;
+  border-left: 4px solid #c70812;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 35px 22px;
+  }
+  .auth-fila {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

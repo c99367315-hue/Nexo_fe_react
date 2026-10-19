@@ -1,0 +1,233 @@
+/* =========================
+   PRODUCT DETAIL STYLES (hamburguesa.css)
+========================= */
+
+.product-detail-page {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.product-detail-contenido {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn-volver-comidas {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+
+.btn-volver-comidas:hover {
+  color: #e50914;
+}
+
+.product-detail-titulo h1 {
+  font-size: 38px;
+  color: #c71111;
+  margin-bottom: 8px;
+}
+
+.product-detail-titulo p {
+  color: #555555;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* ÁREA PRINCIPAL ZONA PRODUCTO */
+.zona-producto {
+  background: white;
+  border-radius: 35px;
+  padding: 40px;
+  display: flex;
+  gap: 50px;
+  box-shadow: 0px 10px 30px rgba(229, 9, 20, 0.12);
+  align-items: flex-start;
+}
+
+/* COLUMNA PRODUCTO IZQUIERDA */
+.producto-col-izq {
+  width: 440px;
+  flex-shrink: 0;
+  text-align: center;
+  border-right: 1px solid #eeeeee;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.estrellas-producto {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.estrellas-producto span {
+  font-size: 32px;
+  color: #ffc107;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.estrellas-producto span:hover {
+  transform: scale(1.2);
+}
+
+.producto-col-izq textarea {
+  width: 100%;
+  height: 90px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  padding: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: none;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.producto-col-izq textarea:focus {
+  border-color: #e50914;
+}
+
+.producto-col-izq img {
+  width: 260px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
+}
+
+.producto-col-izq h2 {
+  color: #e50914;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.producto-precio-destacado {
+  font-size: 26px;
+  font-weight: bold;
+  color: #151923;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.acciones-producto-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.boton-carrito {
+  width: 100%;
+  padding: 14px;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.boton-carrito:hover {
+  background: #c40812;
+  transform: translateY(-2px);
+}
+
+.boton-comprar {
+  width: 100%;
+  padding: 13px;
+  background: #171717;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.boton-comprar:hover {
+  background: #333333;
+}
+
+/* COLUMNA DETALLES DERECHA */
+.detalles-col-der {
+  flex: 1;
+}
+
+.detalles-col-der h3 {
+  font-size: 22px;
+  color: #151923;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.detalles-col-der ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detalles-col-der li {
+  font-size: 15px;
+  color: #444444;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.detalles-col-der li::before {
+  content: "✓";
+  color: #e50914;
+  font-weight: bold;
+}
+
+.boton-calificar {
+  background: #171717;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.boton-calificar:hover {
+  background: #e50914;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .zona-producto {
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .producto-col-izq {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eeeeee;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}
